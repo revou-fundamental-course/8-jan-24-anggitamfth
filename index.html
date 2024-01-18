@@ -1,0 +1,81 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>KATIK! (Kalkulator Matematik)</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container calc-container">
+                <div class="main-border">
+                    <div class="main-text">
+                        <h2>Selamat Datang di KATIK!!</h2>
+                        <h4>KATIK akan membantu kalian untuk melakukan perhitungan luas dan keliling bangun ruang persegi.</h4>
+                    </div>
+                    <div class="main-calc">
+                        <div class="main-box">
+                            <label for="AreaInput">Hitung Luas Persegi</label>
+                            <div class="main-picture">
+                                <img src="assets/inipersegi.jpg" alt="luas persegi" width="200px">
+                            </div>
+                            <p class="text-left">Rumus Luas Persegi yaitu : </p>
+                            <p>
+                                <strong>L = S x S</strong>
+                            </p>
+                            <p class="text-left">
+                                Keterangan : 
+                                <br><br>
+                                L = Luas
+                                <br>
+                                S = Sisi
+                            </p>
+                            <form id="calc-formArea">
+                                <input type="number" id="AreaInput" required="">
+                                <p>
+                                <button type="submit">Hitung</button>
+                                <button type="reset" id="calc-resetArea">Reset</button>
+                                </p>
+                            </form>
+                            <div id="calc-resultArea"></div>
+                        </div>
+                        <div class="main-box">
+                            <label for="PerimeterInput">Hitung Keliling Persegi</label>
+                            <div class="main-picture">
+                                <img src="assets/inipersegi.jpg" alt="keliling persegi" width="200px">
+                            </div>
+                            <p class="text-left">Rumus Keliling Persegi yaitu : </p>
+                            <p>
+                                <strong>K = 4 x S</strong>
+                            </p>
+                            <p class="text-left">
+                                Keterangan : 
+                                <br><br>
+                                K = Keliling
+                                <br>
+                                S = Sisi
+                            </p>
+                            <form id="calc-formPerimeter">
+                                <input type="number" id="PerimeterInput" required="">
+                                <p>
+                                    <button type="submit">Hitung</button>
+                                    <button type="reset" id="calc-resetPerimeter">Reset</button>
+                                </p>
+                                
+                            </form>
+                            <div id="calc-resultPerimeter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+    <script rel="javascript" src="js/script.js"></script>
+
+</body></html>
